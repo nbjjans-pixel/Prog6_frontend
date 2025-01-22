@@ -15,7 +15,7 @@ function CompanyCreateForm({ newItemCreated }) {
         });
     };
 
-    async function createProduct() {
+    async function createCompany() {
         try {
             const response = await fetch('http://145.24.223.176:3000/companys', {
                 method: 'POST',
@@ -40,7 +40,7 @@ function CompanyCreateForm({ newItemCreated }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        createProduct();
+        createCompany();
     };
 
     return (
