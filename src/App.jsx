@@ -2,9 +2,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Layout from "./Layout.jsx";
-import CompanyList from "./SpotList.jsx";
-import CompanyCreateForm from "./SpotCreateForm.jsx";
-import CompanyDetail from "./SpotDetail.jsx";
+import CompanyList from "./CompanyList.jsx";
+import CompanyCreateForm from "./CompanyCreateForm.jsx";
+import CompanyDetail from "./CompanyDetail.jsx";
 
 const router = createBrowserRouter([
     {

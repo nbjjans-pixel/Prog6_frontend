@@ -30,7 +30,7 @@ function CompanyList({spot}){
     return (
         <div className="min-h-screen bg-blue-300 py-12 px-6">
             <h1 className="text-4xl font-semibold text-center text-gray-900 mb-8">
-                Schaak dingen laden
+                Bedrijven laden
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-2xl">
                 {companys.map((company) => (
