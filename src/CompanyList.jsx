@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Company from "./Company.jsx";
 
-
-function CompanyList({spot}){
+function CompanyList({ spot }) {
     const [companys, setCompanys] = useState([]);
 
     async function fetchCompany() {
@@ -22,19 +21,18 @@ function CompanyList({spot}){
         }
     }
 
-
     useEffect(() => {
         fetchCompany();
     }, []);
 
     return (
-        <div className="min-h-screen bg-blue-300 py-12 px-6">
-            <h1 className="text-4xl font-semibold text-center text-gray-900 mb-8">
-                Bedrijven laden
+        <div className="min-h-screen bg-gray-100 py-12 px-6">
+            <h1 className="text-6xl font-semibold text-center text-gray-900 mb-8">
+                Bedrijven
             </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {companys.map((company) => (
-                    <Company key={company.id} company={company} companyDeleted={fetchCompany}/>
+                    <Company key={company.id} company={company} companyDeleted={fetchCompany} />
                 ))}
             </div>
         </div>
