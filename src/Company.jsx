@@ -4,7 +4,7 @@ import { Link } from "react-router";
 function Company({ company, companyDeleted }) {
     const deleteCompany = async (id) => {
         try {
-            const result = await fetch(`http://145.24.223.176:3000/companys/${id}`, {
+            const result = await fetch(`http://145.24.223.176:8000/companys/${id}`, {
                 headers: {
                     Accept: "application/json",
                 },

@@ -17,7 +17,7 @@ function CompanyCreateForm({ newItemCreated }) {
 
     async function createCompany() {
         try {
-            const response = await fetch('http://145.24.223.176:3000/companys', {
+            const response = await fetch('http://145.24.223.176:8000/companys', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
